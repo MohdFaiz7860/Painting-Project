@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paining Project</title>
+    <style>
+        body{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          padding: 0;
+          margin: 0;  
+        }
+
+        .container{
+            display: grid;
+            height: 400px;
+            width: 600px;
+            gap: 9px;
+            background-color: black;
+            grid-template-columns: 190px 280px 112px;
+            grid-template-rows:190px 96px 96px ;
+        }
+
+        .item{
+            background-color: beige;
+        }
+
+        .red{
+            background-color: red;
+            grid-column: span 2;
+        }
+
+        .blue{
+            background-color: skyblue;
+            grid-row: span 2;
+        }
+
+        .white2{
+            grid-row: span 2;
+        }
+
+        .yellow{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item white1"></div>
+    <div class="item red"></div>
+    <div class="item blue"></div>
+    <div class="item white2"></div>
+    <div class="item white3"></div>
+    <div class="item yellow"></div>
+
+  </div>
+          
+</body>
+</html>
